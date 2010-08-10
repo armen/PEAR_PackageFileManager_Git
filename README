@@ -1,1 +1,6 @@
 The Git list plugin generator for both PEAR_PackageFileManager, and PEAR_PackageFileManager2 classes.
+
+It supports standard .gitignore and .git/info/exclude file format
+
+dir/to/exclude/*                  # to exclude whole directory from list
+!dir/to/exclude/important_file    # to include the important_file in the list
