@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package packagerversion="1.9.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.0     http://pear.php.net/dtd/package-2.0.xsd">
  <name>PEAR_PackageFileManager_Git</name>
- <channel>tpspkgs.vardump.org</channel>
+ <channel>pear.vardump.org</channel>
  <summary>Git PackageFileManager plugin</summary>
  <description>-</description>
  <lead>
   <name>Armen Baghumian</name>
   <user>armen</user>
-  <email>armen@parsisco.ir</email>
+  <email>armen@OpenSourceClub.org</email>
   <active>yes</active>
  </lead>
- <date>2010-08-10</date>
- <time>09:55:00</time>
+ <date>2011-11-17</date>
+ <time>15:53:00</time>
  <version>
-  <release>1.1.1</release>
+  <release>1.1.2</release>
   <api>1.0.0</api>
  </version>
  <stability>
@@ -86,5 +86,20 @@
 -
    </notes>
   </release>
- </changelog>
+  <release>
+   <version>
+    <release>1.1.2</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-11-17</date>
+   <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
+   <notes>
+-
+   </notes>
+  </release>
+</changelog>
 </package>
