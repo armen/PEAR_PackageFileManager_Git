@@ -4,3 +4,11 @@ It supports standard .gitignore and .git/info/exclude file format
 
 dir/to/exclude/*                  # to exclude whole directory from list
 !dir/to/exclude/important_file    # to include the important_file in the list
+
+
+To build:
+$ pear package
+
+To install:
+$ pear channel-discover pear.vardump.org
+$ pear install vd/PEAR_PackageFileManager_Git
