@@ -25,8 +25,8 @@
 -
  </notes>
  <contents>
-  <dir baseinstalldir="PEAR/PackageFileManager/" name="/">
-   <file baseinstalldir="PEAR/PackageFileManager/" md5sum="ff7eacd825d0939cff086cf57c3a03be" name="Git.php" role="php" />
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="ff7eacd825d0939cff086cf57c3a03be" name="PEAR/PackageFileManager/Git.php" role="php" />
   </dir>
  </contents>
  <dependencies>
