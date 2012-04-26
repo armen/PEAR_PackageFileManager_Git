@@ -43,11 +43,15 @@ class PEAR_PackageFileManager_Git extends PEAR_PackageFileManager_File
         $git       = $this->_findGitRootDir($directory);
 
         if ($git) {
-            $content    = null;
-            $content   .= file_exists($git.'.gitignore') AND file_get_contents($git.'.gitignore');
-            $content   .= file_exists($git.'.git/info/exclude') AND file_get_contents($git.'.git/info/exclude');
-            $content    = trim($content, "\n");
-            $content    = explode("\n", $content);
+            $content = array();
+            if ( file_exists($git.'.gitignore') ) {
+                $content = array_merge($content,file($git.'.gitignore'));
+            }
+            if ( file_exists($git.'.git/info/exclude') ) {
+                $content = array_merge($content,file($git.'.git/info/exclude'));
+            }
+            $content = array_map('rtrim',$content);
+
             $gitignore  = array('.git/*', '.gitignore');
             $gitinclude = array();
 
