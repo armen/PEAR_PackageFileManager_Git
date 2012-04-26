@@ -44,11 +44,11 @@ class PEAR_PackageFileManager_Git extends PEAR_PackageFileManager_File
 
         if ($git) {
             $content = array();
-            if ( file_exists($git.'.gitignore') ) {
-                $content = array_merge($content,file($git.'.gitignore'));
+            if (file_exists($git.'.gitignore')) {
+                $content = array_merge($content, file($git.'.gitignore'));
             }
-            if ( file_exists($git.'.git/info/exclude') ) {
-                $content = array_merge($content,file($git.'.git/info/exclude'));
+            if (file_exists($git.'.git/info/exclude')) {
+                $content = array_merge($content, file($git.'.git/info/exclude'));
             }
             $content = array_map('rtrim',$content);
 
