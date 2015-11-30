@@ -32,11 +32,6 @@ require_once 'PEAR/PackageFileManager/File.php';
  */
 class PEAR_PackageFileManager_Git extends PEAR_PackageFileManager_File
 {
-    function PEAR_PackageFileManager_Git($options)
-    {
-        parent::PEAR_PackageFileManager_File($options);
-    }
-
     function getFileList()
     {
         $directory = $this->_options['packagedirectory'];
